@@ -19,11 +19,20 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mind Motion
+theme: cvless
+
+taglong: Software that turns robot demos into products
 email: info@mindmotion.ai
+
 description: >- 
   Mind Motion
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mindmotion.ai" # the base hostname & protocol for your site, e.g. http://example.com
+
+photo: assets/files/MindMotionAILogo.svg
+
+profile:
+  cv: false
 
 # Build settings
 exclude:
@@ -37,3 +46,15 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - LICENSE
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  sourcemap: never
